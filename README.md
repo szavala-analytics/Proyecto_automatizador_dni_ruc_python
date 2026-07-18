@@ -206,9 +206,6 @@ desde tu Mac, la opcion mas simple es Render.com (tiene un plan gratuito):
 
 ## 9. Usar el maestro de clientes en Power BI (navegador, sin Power BI Desktop)
 
-Como usas Power BI en el navegador (app.powerbi.com) y no la version de
-escritorio, el flujo recomendado es:
-
 ### Opcion A: Subir el archivo Excel manualmente (la mas simple)
 
 1. Cada vez que proceses documentos, se genera `maestro_clientes.xlsx`
