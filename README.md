@@ -1,8 +1,16 @@
-4# Automatizacion de Clientes y Proveedores (DNI + RUC)
+# Automatizacion de Clientes y Proveedores (DNI + RUC)
 
 Proyecto que detecta automaticamente si un numero de documento es DNI (8 digitos)
 o RUC (11 digitos), consulta el endpoint correspondiente de decolecta.com,
 y consolida todo en un maestro unico (CSV y Excel) listo para usarse en Power BI.
+
+---
+
+## 📄 Manual de uso
+
+**[Ver el Manual de uso completo (PDF)](docs/Manual_de_uso_Proyecto_Python.pdf)**
+
+Haz clic en el enlace de arriba para leerlo directamente en el visor de GitHub, sin necesidad de descargarlo.
 
 ---
 
@@ -272,6 +280,8 @@ clientes-proveedores/
   data/
     entrada/documentos.txt   Lista de documentos para el modo automatico
     historico/               Respaldos con fecha y hora de cada corrida
+  docs/
+    Manual_de_uso_Proyecto_Python.pdf   Manual de uso completo
 ```
 
 ---
