@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Automatizacion de Clientes y Proveedores</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+  <h1>Automatizacion de Clientes y Proveedores</h1>
+  <p>Deteccion automatica de DNI (8 digitos) y RUC (11 digitos) - Consolidado para Power BI</p>
+</header>
+
+<main>
+
+  {% with mensajes = get_flashed_messages() %}
+    {% if mensajes %}
+      <div class="aviso">
+        {% for mensaje in mensajes %}
+          <p>{{ mensaje }}</p>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  {% if not token_configurado %}
+    <div class="advertencia">
+      No se detecto el token de la API. Revisa el archivo .env (variable DECOLECTA_API_TOKEN).
+    </div>
+  {% endif %}
+
+  <section class="panel">
+    <h2>Cargar documentos</h2>
+    <p class="detalle">Carpeta de destino del maestro: <code>{{ carpeta_destino }}</code></p>
+
+    <form action="/procesar" method="post" enctype="multipart/form-data">
+      <label for="documentos">Pega la lista de documentos (uno por linea):</label>
+      <textarea id="documentos" name="documentos" rows="8" placeholder="46027897&#10;20601030013&#10;10023456789"></textarea>
+
+      <label for="archivo">O sube un archivo .txt / .csv con un documento por linea:</label>
+      <input type="file" id="archivo" name="archivo" accept=".txt,.csv">
+
+      <button type="submit">Procesar documentos</button>
+    </form>
+  </section>
+
+  {% if resultado.filas %}
+  <section class="panel">
+    <h2>Resultado de la ultima corrida</h2>
+
+    <div class="descargas">
+      <a href="/descargar/csv">Descargar CSV</a>
+      <a href="/descargar/xlsx">Descargar Excel (XLSX)</a>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Documento</th>
+          <th>Nombre / Razon Social</th>
+          <th>Estado</th>
+          <th>Direccion</th>
+          <th>Distrito</th>
+          <th>Observaciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for fila in resultado.filas %}
+        <tr class="{{ 'fila-error' if fila.categoria == 'N/A' else '' }}">
+          <td>{{ fila.tipo_documento }}</td>
+          <td>{{ fila.numero_documento }}</td>
+          <td>{{ fila.nombre_completo_razon_social }}</td>
+          <td>{{ fila.estado }}</td>
+          <td>{{ fila.direccion }}</td>
+          <td>{{ fila.distrito }}</td>
+          <td>{{ fila.observaciones }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endif %}
+
+</main>
+
+</body>
+</html>

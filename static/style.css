@@ -1,0 +1,106 @@
+:root {
+  --azul: #1f3a5f;
+  --azul-claro: #eef3f9;
+  --gris: #555;
+  --borde: #d6dbe1;
+  --rojo: #b23b3b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  background: #f7f8fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--azul);
+  color: white;
+  padding: 24px 32px;
+}
+
+header h1 { margin: 0 0 6px 0; font-size: 22px; }
+header p { margin: 0; font-size: 14px; opacity: 0.85; }
+
+main {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.panel {
+  background: white;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.panel h2 { margin-top: 0; font-size: 18px; color: var(--azul); }
+
+.detalle { font-size: 13px; color: var(--gris); }
+.detalle code { background: var(--azul-claro); padding: 2px 6px; border-radius: 4px; }
+
+label { display: block; margin-top: 14px; margin-bottom: 6px; font-size: 14px; font-weight: 600; }
+
+textarea, input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--borde);
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+button {
+  margin-top: 18px;
+  background: var(--azul);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover { opacity: 0.9; }
+
+.aviso {
+  background: #e7f3e8;
+  border: 1px solid #a9d3ab;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.advertencia {
+  background: #fbeeee;
+  border: 1px solid #e0b4b4;
+  color: var(--rojo);
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.descargas { margin-bottom: 16px; }
+.descargas a {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 8px 16px;
+  background: var(--azul-claro);
+  color: var(--azul);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { border: 1px solid var(--borde); padding: 8px 10px; text-align: left; }
+th { background: var(--azul-claro); }
+.fila-error { background: #fdf3f3; }

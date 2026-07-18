@@ -1,0 +1,11 @@
+.env
+credentials.json
+token_drive.json
+venv/
+__pycache__/
+*.pyc
+data/historico/
+data/*.csv
+data/*.xlsx
+.DS_Store
+.env
