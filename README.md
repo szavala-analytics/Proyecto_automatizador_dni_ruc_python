@@ -16,7 +16,7 @@ Haz clic en el enlace de arriba para leerlo directamente en el visor de GitHub, 
 
 ## 1. Requisitos previos
 
-- Mac con Python 3.12 (ya lo tienes: `python3 --version` -> Python 3.12.10)
+- Mac con Python 3.12 (`python3 --version` -> Python 3.12.10)
 - Una cuenta en https://decolecta.com para obtener un token de API
 - Una App web en Google Apps Script.
 - Power BI en el navegador (app.powerbi.com) con tu cuenta habitual
