@@ -1,4 +1,4 @@
-# Automatizacion de Clientes y Proveedores (DNI + RUC)
+4# Automatizacion de Clientes y Proveedores (DNI + RUC)
 
 Proyecto que detecta automaticamente si un numero de documento es DNI (8 digitos)
 o RUC (11 digitos), consulta el endpoint correspondiente de decolecta.com,
@@ -10,8 +10,7 @@ y consolida todo en un maestro unico (CSV y Excel) listo para usarse en Power BI
 
 - Mac con Python 3.12 (ya lo tienes: `python3 --version` -> Python 3.12.10)
 - Una cuenta en https://decolecta.com para obtener un token de API
-- Google Drive para escritorio instalado (si quieres que el maestro se guarde
-  directamente en tu carpeta de Drive). Si no lo tienes, ver seccion 6.
+- Una App web en Google Apps Script.
 - Power BI en el navegador (app.powerbi.com) con tu cuenta habitual
 
 ---
