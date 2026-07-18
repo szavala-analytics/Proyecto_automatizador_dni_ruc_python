@@ -202,10 +202,6 @@ desde tu Mac, la opcion mas simple es Render.com (tiene un plan gratuito):
    por cualquiera que encuentre la URL y gastar las consultas de tu token.
    Si despliegas esto en publico, conviene agregarle una contrasena simple.
 
-Para tu caso (trabajo interno de finanzas, un solo usuario), lo mas
-practico es quedarte con la Seccion 5 (uso local en tu Mac) y usar GitHub
-solo como respaldo del codigo (Seccion 8.1).
-
 ---
 
 ## 9. Usar el maestro de clientes en Power BI (navegador, sin Power BI Desktop)
@@ -254,10 +250,6 @@ subir el archivo cada vez:
    con la frecuencia mas alta suele requerir una licencia Power BI Pro
    (Microsoft ofrece una prueba gratuita de 60 dias); revisa tu plan actual
    en la configuracion de tu cuenta de Power BI.
-
-Para un area de finanzas con pocos usuarios, la Opcion A (subir el Excel
-manualmente cada vez que se actualiza el maestro) suele ser suficiente y
-no requiere licencias adicionales.
 
 ---
 
