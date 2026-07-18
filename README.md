@@ -280,8 +280,7 @@ clientes-proveedores/
   data/
     entrada/documentos.txt   Lista de documentos para el modo automatico
     historico/               Respaldos con fecha y hora de cada corrida
-  docs/
-    Manual_de_uso_Proyecto_Python.pdf   Manual de uso completo
+ Manual_de_uso_Proyecto_Python.pdf   Manual de uso completo
 ```
 
 ---
