@@ -8,7 +8,7 @@ y consolida todo en un maestro unico (CSV y Excel) listo para usarse en Power BI
 
 ## 📄 Manual de uso
 
-**[Ver el Manual de uso completo (PDF)](docs/Manual_de_uso_Proyecto_Python.pdf)**
+**[Ver el Manual de uso completo (PDF)](Manual_de_uso_Proyecto_Python.pdf)**
 
 Haz clic en el enlace de arriba para leerlo directamente en el visor de GitHub, sin necesidad de descargarlo.
 
