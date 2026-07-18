@@ -149,7 +149,7 @@ Nota: cron solo se ejecuta si tu Mac esta encendida en ese horario.
 
 ---
 
-## 7. Sobre subirlo a GitHub y "desplegarlo" como sitio web
+## 7. Aspectos en GitHub y "desplegarlo" como sitio web
 
 Puntos importantes que debes tener claros:
 
@@ -181,7 +181,7 @@ Puntos importantes que debes tener claros:
    El archivo `.gitignore` ya esta configurado para que tu archivo `.env`
    (con el token) y los datos generados **nunca** se suban a GitHub.
 
-### 8.2 Desplegarlo como sitio en vivo (opcional, avanzado)
+### 8.2 Desplegarlo como sitio en vivo (opcional)
 
 Si quieres que el formulario web sea accesible desde internet y no solo
 desde tu Mac, la opcion mas simple es Render.com (tiene un plan gratuito):
